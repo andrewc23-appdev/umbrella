@@ -5,8 +5,8 @@ p "Where are you located?"
 
 # getting location
 
-#location = gets.chomp
-location = "Chicago"
+location = gets.chomp
+
 gmaps_url = "https://maps.googleapis.com/maps/api/geocode/json?address=#{location}&key=#{ENV.fetch("GMAPS_KEY")}"
 
 # getting lat and long
